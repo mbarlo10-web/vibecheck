@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment files
+.env
+
+# Streamlit secrets (local only)
+.streamlit/secrets.toml
+
+# Local trip data
+trips/*.json
+trips/**/*.json
+
+# Editor / tooling
+.vscode/
+.specstory/
+
+# Mac
+.DS_Store
+
+.streamlit/ASU Sciata/
+.streamlit/streamlit/

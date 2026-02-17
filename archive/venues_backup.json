@@ -1,0 +1,241 @@
+[
+  {
+    "name": "The Mission Old Town",
+    "category": "dining",
+    "price_tier": 3,
+    "vibes": ["foodie", "balanced", "drinks"],
+    "themes": ["bachelorette", "WMPO"]
+  },
+  {
+    "name": "Toca Madera",
+    "category": "dining",
+    "price_tier": 4,
+    "vibes": ["party", "luxury", "drinks"],
+    "themes": ["bachelorette", "bachelor"]
+  },
+  {
+    "name": "Olive & Ivy",
+    "category": "dining",
+    "price_tier": 3,
+    "vibes": ["foodie", "balanced"],
+    "themes": ["bachelorette", "spring_training"]
+  },
+  {
+    "name": "Maple & Ash",
+    "category": "dining",
+    "price_tier": 4,
+    "vibes": ["luxury", "party"],
+    "themes": ["bachelor", "WMPO"]
+  },
+  {
+    "name": "Mastro's Ocean Club",
+    "category": "dining",
+    "price_tier": 4,
+    "vibes": ["luxury", "foodie"],
+    "themes": ["WMPO", "bachelor"]
+  },
+  {
+    "name": "Hash Kitchen",
+    "category": "brunch",
+    "price_tier": 2,
+    "vibes": ["party", "drinks"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "The Henry",
+    "category": "brunch",
+    "price_tier": 2,
+    "vibes": ["balanced", "foodie"],
+    "themes": ["spring_training", "bachelorette"]
+  },
+  {
+    "name": "OEB Breakfast Co.",
+    "category": "brunch",
+    "price_tier": 2,
+    "vibes": ["foodie"],
+    "themes": ["spring_training", "WMPO"]
+  },
+  {
+    "name": "Farm & Craft",
+    "category": "brunch",
+    "price_tier": 2,
+    "vibes": ["relax", "balanced"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "Maya Dayclub",
+    "category": "nightlife",
+    "price_tier": 4,
+    "vibes": ["party", "dancing"],
+    "themes": ["bachelorette", "bachelor"]
+  },
+  {
+    "name": "Bottled Blonde",
+    "category": "nightlife",
+    "price_tier": 3,
+    "vibes": ["party", "sports"],
+    "themes": ["bachelor", "spring_training"]
+  },
+  {
+    "name": "Casa Amigos",
+    "category": "nightlife",
+    "price_tier": 3,
+    "vibes": ["dancing", "party"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "El Hefe",
+    "category": "nightlife",
+    "price_tier": 3,
+    "vibes": ["party", "dancing"],
+    "themes": ["bachelor"]
+  },
+  {
+    "name": "Outrider Rooftop",
+    "category": "nightlife",
+    "price_tier": 3,
+    "vibes": ["drinks", "luxury"],
+    "themes": ["WMPO"]
+  },
+  {
+    "name": "Topgolf Scottsdale",
+    "category": "activity",
+    "price_tier": 2,
+    "vibes": ["sports", "drinks"],
+    "themes": ["bachelor", "spring_training", "WMPO"]
+  },
+  {
+    "name": "PopStroke Scottsdale",
+    "category": "activity",
+    "price_tier": 2,
+    "vibes": ["sports", "balanced"],
+    "themes": ["spring_training", "WMPO"]
+  },
+  {
+    "name": "Octane Raceway",
+    "category": "activity",
+    "price_tier": 2,
+    "vibes": ["sports", "party"],
+    "themes": ["bachelor"]
+  },
+  {
+    "name": "DBat Scottsdale",
+    "category": "activity",
+    "price_tier": 1,
+    "vibes": ["sports"],
+    "themes": ["spring_training"]
+  },
+  {
+    "name": "Taroko Sports",
+    "category": "activity",
+    "price_tier": 1,
+    "vibes": ["sports"],
+    "themes": ["spring_training"]
+  },
+  {
+    "name": "Baseballism Scottsdale",
+    "category": "shopping",
+    "price_tier": 2,
+    "vibes": ["sports"],
+    "themes": ["spring_training"]
+  },
+  {
+    "name": "The Phoenician Spa",
+    "category": "spa",
+    "price_tier": 4,
+    "vibes": ["spa", "luxury"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "CIVANA Wellness",
+    "category": "spa",
+    "price_tier": 4,
+    "vibes": ["spa", "relax"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "VH Spa Valley Ho",
+    "category": "spa",
+    "price_tier": 3,
+    "vibes": ["spa", "balanced"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "Camelback Mountain Hiking",
+    "category": "activity",
+    "price_tier": 1,
+    "vibes": ["relax", "sports"],
+    "themes": ["spring_training", "WMPO"]
+  },
+  {
+    "name": "ATV Desert Tour",
+    "category": "activity",
+    "price_tier": 3,
+    "vibes": ["party", "sports"],
+    "themes": ["bachelor"]
+  },
+  {
+    "name": "Hot Air Balloon Ride",
+    "category": "activity",
+    "price_tier": 4,
+    "vibes": ["luxury", "relax"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "Second Story Liquor Bar",
+    "category": "nightlife",
+    "price_tier": 3,
+    "vibes": ["drinks", "balanced"],
+    "themes": ["bachelorette", "WMPO"]
+  },
+  {
+    "name": "Diego Pops",
+    "category": "dining",
+    "price_tier": 2,
+    "vibes": ["party", "drinks"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "The Montauk",
+    "category": "dining",
+    "price_tier": 3,
+    "vibes": ["balanced", "drinks"],
+    "themes": ["bachelorette"]
+  },
+  {
+    "name": "Boondocks Patio & Grill",
+    "category": "dining",
+    "price_tier": 2,
+    "vibes": ["sports", "drinks"],
+    "themes": ["spring_training"]
+  },
+  {
+    "name": "Zipps Sports Grill",
+    "category": "dining",
+    "price_tier": 1,
+    "vibes": ["sports"],
+    "themes": ["spring_training"]
+  },
+  {
+    "name": "Private SUV Transport",
+    "category": "transport",
+    "price_tier": 3,
+    "vibes": ["luxury"],
+    "themes": ["bachelor", "bachelorette", "WMPO"]
+  },
+  {
+    "name": "Scottsdale Party Bus",
+    "category": "transport",
+    "price_tier": 3,
+    "vibes": ["party"],
+    "themes": ["bachelor", "bachelorette"]
+  },
+  {
+    "name": "Executive Black Car Service",
+    "category": "transport",
+    "price_tier": 4,
+    "vibes": ["luxury"],
+    "themes": ["WMPO"]
+  }
+]
+

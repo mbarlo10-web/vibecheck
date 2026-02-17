@@ -1,0 +1,896 @@
+{
+  "spring_training_teams": {
+    "options": [
+      {
+        "id": "az",
+        "label": "AZ (Dbacks + Rockies)",
+        "teams": [
+          "AZ Diamondbacks",
+          "CO Rockies"
+        ]
+      },
+      {
+        "id": "co",
+        "label": "CO (Rockies)",
+        "teams": [
+          "CO Rockies"
+        ]
+      },
+      {
+        "id": "chicago",
+        "label": "Chicago (Cubs)",
+        "teams": [
+          "Chicago Cubs"
+        ]
+      },
+      {
+        "id": "as",
+        "label": "A's",
+        "teams": [
+          "A's"
+        ]
+      },
+      {
+        "id": "sf",
+        "label": "SF Giants",
+        "teams": [
+          "SF Giants"
+        ]
+      }
+    ],
+    "rules": {
+      "force_games_on_full_days": true,
+      "game_times": [
+        "1:00 PM",
+        "6:00 PM"
+      ]
+    }
+  },
+  "venues": [
+    {
+      "name": "WM Phoenix Open – Tournament Day",
+      "category": "activity",
+      "price_tier": 3,
+      "area": "North Scottsdale",
+      "lat": 33.6493,
+      "lon": -111.9232,
+      "vibes": [
+        "sports",
+        "golf",
+        "outdoor",
+        "day-drinks"
+      ],
+      "themes": [
+        "WMPO"
+      ]
+    },
+    {
+      "name": "Coors Light Birds Nest – Concert",
+      "category": "nightlife",
+      "price_tier": 3,
+      "area": "North Scottsdale",
+      "lat": 33.6493,
+      "lon": -111.9232,
+      "vibes": [
+        "party",
+        "drinks",
+        "dancing",
+        "concert"
+      ],
+      "themes": [
+        "WMPO"
+      ]
+    },
+    {
+      "name": "ATV Desert Tour",
+      "category": "activity",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "sports"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Camelback Mountain Hiking",
+      "category": "activity",
+      "price_tier": 1,
+      "lat": 33.515,
+      "lon": -111.963,
+      "vibes": [
+        "relax",
+        "sports"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "DBat Scottsdale",
+      "category": "activity",
+      "price_tier": 1,
+      "vibes": [
+        "sports"
+      ],
+      "themes": [
+        "spring_training"
+      ]
+    },
+    {
+      "name": "Fashion Square Mall",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "Old Town",
+      "lat": 33.5012,
+      "lon": -111.9254,
+      "vibes": [
+        "luxury",
+        "balanced",
+        "shopping"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Hat Bar Scottsdale",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "Old Town",
+      "lat": 33.4942,
+      "lon": -111.9261,
+      "vibes": [
+        "party",
+        "drinks"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Hohokam Stadium",
+      "category": "activity",
+      "price_tier": 2,
+      "lat": 33.4167,
+      "lon": -111.8333,
+      "vibes": [
+        "sports",
+        "baseball",
+        "casual"
+      ],
+      "themes": [
+        "spring_training"
+      ],
+      "teams": [
+        "A's"
+      ]
+    },
+    {
+      "name": "Hot Air Balloon Ride",
+      "category": "activity",
+      "price_tier": 4,
+      "vibes": [
+        "luxury",
+        "relax"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Kierland Commons",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "North Scottsdale",
+      "lat": 33.6181,
+      "lon": -111.9292,
+      "vibes": [
+        "luxury",
+        "balanced",
+        "shopping"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Octane Raceway",
+      "category": "activity",
+      "price_tier": 2,
+      "vibes": [
+        "sports",
+        "party"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO"
+      ]
+    },
+    {
+      "name": "PopStroke Scottsdale",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "North Scottsdale",
+      "lat": 33.637,
+      "lon": -111.925,
+      "vibes": [
+        "sports",
+        "balanced",
+        "golf"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO"
+      ]
+    },
+    {
+      "name": "Puttshack Scottsdale",
+      "category": "activity",
+      "price_tier": 2,
+      "vibes": [
+        "party",
+        "drinks",
+        "golf"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Rancher Hat Bar",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "Old Town",
+      "lat": 33.4942,
+      "lon": -111.9261,
+      "vibes": [
+        "party",
+        "drinks"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Salt River Fields at Talking Stick",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "Talking Stick",
+      "lat": 33.5407,
+      "lon": -111.8882,
+      "vibes": [
+        "sports",
+        "baseball",
+        "outdoor",
+        "day-drinks"
+      ],
+      "themes": [
+        "spring_training"
+      ],
+      "teams": [
+        "AZ Diamondbacks",
+        "CO Rockies"
+      ]
+    },
+    {
+      "name": "Scottsdale Quarter",
+      "category": "activity",
+      "price_tier": 2,
+      "vibes": [
+        "luxury",
+        "balanced",
+        "shopping"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Scottsdale Stadium",
+      "category": "activity",
+      "price_tier": 2,
+      "area": "Old Town",
+      "lat": 33.5012,
+      "lon": -111.9254,
+      "vibes": [
+        "sports",
+        "baseball",
+        "classic",
+        "outdoor"
+      ],
+      "themes": [
+        "spring_training"
+      ],
+      "teams": [
+        "SF Giants"
+      ]
+    },
+    {
+      "name": "Sloan Park",
+      "category": "activity",
+      "price_tier": 2,
+      "vibes": [
+        "sports",
+        "baseball",
+        "day-drinks"
+      ],
+      "themes": [
+        "spring_training"
+      ],
+      "teams": [
+        "Chicago Cubs"
+      ]
+    },
+    {
+      "name": "Taroko Sports",
+      "category": "activity",
+      "price_tier": 1,
+      "vibes": [
+        "sports"
+      ],
+      "themes": [
+        "spring_training"
+      ]
+    },
+    {
+      "name": "Tempe Diablo Stadium",
+      "category": "activity",
+      "price_tier": 2,
+      "vibes": [
+        "sports",
+        "baseball",
+        "outdoor"
+      ],
+      "themes": [
+        "spring_training"
+      ],
+      "teams": [
+        "LA Angels"
+      ]
+    },
+    {
+      "name": "Topgolf Scottsdale",
+      "category": "activity",
+      "price_tier": 2,
+      "lat": 33.637,
+      "lon": -111.925,
+      "vibes": [
+        "sports",
+        "drinks",
+        "golf"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Berdena's",
+      "category": "brunch",
+      "price_tier": 2,
+      "vibes": [
+        "foodie",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Culinary Dropout",
+      "category": "brunch",
+      "price_tier": 2,
+      "lat": 33.5012,
+      "lon": -111.9254,
+      "vibes": [
+        "party",
+        "drinks",
+        "sports"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Farm & Craft",
+      "category": "brunch",
+      "price_tier": 2,
+      "vibes": [
+        "relax",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Hash Kitchen",
+      "category": "brunch",
+      "price_tier": 2,
+      "vibes": [
+        "party",
+        "drinks"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "OEB Breakfast Co.",
+      "category": "brunch",
+      "price_tier": 2,
+      "vibes": [
+        "foodie"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Canal Club",
+      "category": "brunch",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "drinks",
+        "luxury"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Henry",
+      "category": "brunch",
+      "price_tier": 2,
+      "vibes": [
+        "balanced",
+        "foodie"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Herb Box",
+      "category": "brunch",
+      "price_tier": 3,
+      "vibes": [
+        "foodie",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Boondocks Patio & Grill",
+      "category": "dining",
+      "price_tier": 2,
+      "lat": 33.4942,
+      "lon": -111.9261,
+      "vibes": [
+        "sports",
+        "drinks"
+      ],
+      "themes": [
+        "spring_training"
+      ]
+    },
+    {
+      "name": "Diego Pops",
+      "category": "dining",
+      "price_tier": 2,
+      "vibes": [
+        "party",
+        "drinks"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Maple & Ash",
+      "category": "dining",
+      "price_tier": 4,
+      "vibes": [
+        "luxury",
+        "party"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Mastro's Ocean Club",
+      "category": "dining",
+      "price_tier": 4,
+      "vibes": [
+        "luxury",
+        "foodie"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Olive & Ivy",
+      "category": "dining",
+      "price_tier": 3,
+      "area": "Old Town",
+      "lat": 33.4942,
+      "lon": -111.9261,
+      "vibes": [
+        "foodie",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Roaring Fork",
+      "category": "dining",
+      "price_tier": 3,
+      "vibes": [
+        "foodie",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Mission Old Town",
+      "category": "dining",
+      "price_tier": 3,
+      "vibes": [
+        "foodie",
+        "balanced",
+        "drinks"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Montauk",
+      "category": "dining",
+      "price_tier": 3,
+      "vibes": [
+        "balanced",
+        "drinks"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Toca Madera",
+      "category": "dining",
+      "price_tier": 4,
+      "vibes": [
+        "party",
+        "luxury",
+        "drinks"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Zipps Sports Grill",
+      "category": "dining",
+      "price_tier": 1,
+      "vibes": [
+        "sports"
+      ],
+      "themes": [
+        "spring_training"
+      ]
+    },
+    {
+      "name": "Bottled Blonde",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "sports"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Casa Amigos",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "dancing",
+        "party"
+      ],
+      "themes": [
+        "spring_training",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Clubhouse",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "dancing",
+        "drinks"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Desert Diamond Casino - Glendale",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "drinks",
+        "party",
+        "casino"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO"
+      ]
+    },
+    {
+      "name": "El Hefe",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "dancing"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Maya Dayclub",
+      "category": "nightlife",
+      "price_tier": 4,
+      "vibes": [
+        "party",
+        "dancing"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Outrider Rooftop",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "drinks",
+        "luxury"
+      ],
+      "themes": [
+        "WMPO"
+      ]
+    },
+    {
+      "name": "Riot House",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "drinks",
+        "dancing",
+        "balanced",
+        "foodie",
+        "relax",
+        "sports",
+        "luxury",
+        "nightlife"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Second Story Liquor Bar",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "drinks",
+        "balanced"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Talking Stick Resort Casino",
+      "category": "nightlife",
+      "price_tier": 3,
+      "vibes": [
+        "drinks",
+        "party",
+        "luxury",
+        "casino"
+      ],
+      "themes": [
+        "bachelorette",
+        "spring_training",
+        "WMPO"
+      ]
+    },
+    {
+      "name": "Hotel Adeline",
+      "category": "pool",
+      "price_tier": 3,
+      "vibes": [
+        "party",
+        "luxury"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Mountain Shadows Pool",
+      "category": "pool",
+      "price_tier": 3,
+      "vibes": [
+        "relax",
+        "luxury"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "W Scottsdale Pool & Daybed",
+      "category": "pool",
+      "price_tier": 4,
+      "vibes": [
+        "party",
+        "luxury"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Baseballism Scottsdale",
+      "category": "shopping",
+      "price_tier": 2,
+      "vibes": [
+        "sports"
+      ],
+      "themes": [
+        "spring_training"
+      ]
+    },
+    {
+      "name": "CIVANA Wellness",
+      "category": "spa",
+      "price_tier": 4,
+      "vibes": [
+        "spa",
+        "relax"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "The Phoenician Spa",
+      "category": "spa",
+      "price_tier": 4,
+      "vibes": [
+        "spa",
+        "luxury"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "VH Spa Valley Ho",
+      "category": "spa",
+      "price_tier": 3,
+      "vibes": [
+        "spa",
+        "balanced"
+      ],
+      "themes": [
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Executive Black Car Service",
+      "category": "transport",
+      "price_tier": 4,
+      "vibes": [
+        "luxury"
+      ],
+      "themes": [
+        "WMPO"
+      ]
+    },
+    {
+      "name": "Private SUV Transport",
+      "category": "transport",
+      "price_tier": 3,
+      "vibes": [
+        "luxury"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    },
+    {
+      "name": "Scottsdale Party Bus",
+      "category": "transport",
+      "price_tier": 3,
+      "vibes": [
+        "party"
+      ],
+      "themes": [
+        "spring_training",
+        "WMPO",
+        "bachelorette"
+      ]
+    }
+  ]
+}
