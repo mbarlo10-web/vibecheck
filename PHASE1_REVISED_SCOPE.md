@@ -170,7 +170,7 @@ def generate_plan_a_b(
 **Option 2: Simple File-Based (MVP)**
 - JSON file: `trips/{trip_id}.json`
 - Contains: trip params, votes, reconciled preferences, plans
-- Share link: `vibecheck.com/trip/{trip_id}`
+- Share link: `playbook.com/trip/{trip_id}`
 
 **Option 3: Database (Phase 2)**
 - SQLite or PostgreSQL

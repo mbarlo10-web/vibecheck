@@ -1,7 +1,7 @@
 # Phase 1 Implementation Plan: Bridging the Gap
 
 ## Overview
-This plan addresses the gap between current VibeCheck functionality and the Phase 1 proposal, focusing on:
+This plan addresses the gap between current PlayBook functionality and the Phase 1 proposal, focusing on:
 1. **Plan A vs Plan B** generation (two ranked itinerary options)
 2. **API Integration Feasibility Assessment**
 
@@ -161,17 +161,17 @@ def compare_plans(plan_a: List[Dict], plan_b: List[Dict], venues: List[Dict]) ->
 
 #### 2.3 Recommended Phase 1 Approach
 
-**"VibeCheck Will Handle Booking" Messaging Strategy**:
+**"PlayBook Will Handle Booking" Messaging Strategy**:
 
 1. **For Phase 1 (Planning Focus)**:
-   - Keep messaging: "VibeCheck will book via [Platform]"
+   - Keep messaging: "PlayBook will book via [Platform]"
    - **Actual implementation**: Generate deep links with pre-filled details
    - User clicks → redirected to booking platform with details pre-filled
    - Example: `https://www.resy.com/restaurants/[venue]?date=2026-02-20&time=19:30&covers=6`
 
 2. **Booking Codes / Instructions**:
    - For venues without APIs: Provide booking codes or instructions
-   - Example: "Call [venue] and mention VibeCheck booking code: VC-ABC123"
+   - Example: "Call [venue] and mention PlayBook booking code: VC-ABC123"
 
 3. **Stripe Payment Integration** (already implemented):
    - Use for "plan lock" fee ($99)
@@ -233,7 +233,7 @@ def compare_plans(plan_a: List[Dict], plan_b: List[Dict], venues: List[Dict]) ->
 ### API Integration (Phase 1):
 - ✅ Deep links work for major platforms
 - ✅ Booking messaging is clear and accurate
-- ✅ Users understand VibeCheck handles coordination, not actual booking (yet)
+- ✅ Users understand PlayBook handles coordination, not actual booking (yet)
 - ✅ Foundation laid for Phase 2 actual API integration
 
 ---
@@ -242,5 +242,5 @@ def compare_plans(plan_a: List[Dict], plan_b: List[Dict], venues: List[Dict]) ->
 
 - **Phase 1 Scope**: Focus on planning and decision convergence, not actual booking execution
 - **API Reality**: Most booking APIs require partnerships; deep links are Phase 1 solution
-- **User Expectations**: Set clear expectations that "VibeCheck will book" means coordination + deep links, not automated booking (yet)
+- **User Expectations**: Set clear expectations that "PlayBook will book" means coordination + deep links, not automated booking (yet)
 - **Phase 2 Bridge**: Phase 1 validates demand → Phase 2 builds partnerships → Phase 2 enables actual API booking

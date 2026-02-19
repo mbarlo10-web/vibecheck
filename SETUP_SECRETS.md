@@ -1,10 +1,10 @@
-# VibeCheck: OpenAI & Stripe Setup
+# PlayBook: OpenAI & Stripe Setup
 
 ## Option A: Use `.streamlit/secrets.toml` (recommended)
 
 ### 1. Open the secrets file
 
-- Path: **`vibecheck/.streamlit/secrets.toml`**
+- Path: **`playbook/.streamlit/secrets.toml`**
 - If it doesn’t exist, create the folder `.streamlit` and the file `secrets.toml` inside it.
 
 ### 2. Add your OpenAI API key
@@ -77,19 +77,19 @@ streamlit run app.py
 
 ### Stripe
 
-- **Variable name:** `VIBECHECK_STRIPE_PAYMENT_LINK`
+- **Variable name:** `PLAYBOOK_STRIPE_PAYMENT_LINK`
 - **Value:** your Stripe test payment link (e.g. `https://buy.stripe.com/test_...`)
 
 **Mac/Linux:**
 
 ```bash
-export VIBECHECK_STRIPE_PAYMENT_LINK="https://buy.stripe.com/test_xxxx"
+export PLAYBOOK_STRIPE_PAYMENT_LINK="https://buy.stripe.com/test_xxxx"
 ```
 
 **Windows:**
 
 ```cmd
-set VIBECHECK_STRIPE_PAYMENT_LINK=https://buy.stripe.com/test_xxxx
+set PLAYBOOK_STRIPE_PAYMENT_LINK=https://buy.stripe.com/test_xxxx
 ```
 
 ---

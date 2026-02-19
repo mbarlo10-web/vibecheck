@@ -17,7 +17,7 @@ import streamlit.components.v1 as components
 # Page config
 # ----------------------------
 st.set_page_config(
-    page_title="VibeCheck",
+    page_title="PlayBook",
     page_icon="✅",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -590,54 +590,24 @@ def load_venues() -> List[Dict[str, Any]]:
 
 
 def get_stripe_payment_link() -> str:
-    try:
-        stripe_block = st.secrets.get("stripe", {})
-        if isinstance(stripe_block, dict):
-            link = stripe_block.get("payment_link", "")
-            if isinstance(link, str) and link.strip():
-                return link.strip()
-    except Exception:
-        pass
-
-    try:
-        app_dir = os.path.dirname(os.path.abspath(__file__))
-        secrets_path = os.path.join(app_dir, ".streamlit", "secrets.toml")
-        if os.path.exists(secrets_path):
-            with open(secrets_path, "r", encoding="utf-8") as f:
-                content = f.read()
-            in_stripe = False
-            for line in content.splitlines():
-                line = line.strip()
-                if line == "[stripe]":
-                    in_stripe = True
-                    continue
-                if in_stripe and line.startswith("payment_link"):
-                    idx = line.find("=")
-                    if idx >= 0:
-                        val = line[idx + 1:].strip().strip('"').strip("'")
-                        if val.startswith("https://"):
-                            return val.strip()
-                    break
-                if in_stripe and line.startswith("["):
-                    break
-    except Exception:
-        pass
-
-    link2 = os.getenv("VIBECHECK_STRIPE_PAYMENT_LINK", "")
-    return link2.strip() if isinstance(link2, str) else ""
+    payment_link = (
+        st.secrets.get("stripe", {}).get("payment_link", "")
+        or os.getenv("PLAYBOOK_STRIPE_PAYMENT_LINK", "")
+    )
+    return payment_link.strip() if isinstance(payment_link, str) else ""
 
 
 def category_reservation_providers(category: str, provider_name: str = "") -> str:
     """
     Human-friendly hint for how bookings are handled.
     
-    VibeCheck handles all bookings via APIs (OpenTable, Resy, Ticketmaster, etc.),
-    so these messages indicate what VibeCheck will book, not what the user needs to do.
+    PlayBook handles all bookings via APIs (OpenTable, Resy, Ticketmaster, etc.),
+    so these messages indicate what PlayBook will book, not what the user needs to do.
     """
     category = (category or "").lower()
     name = (provider_name or "").strip().lower()
 
-    # Concerts, WMPO, stadium/arena/ballpark-style events -> tickets via VibeCheck.
+    # Concerts, WMPO, stadium/arena/ballpark-style events -> tickets via PlayBook.
     concert_keywords = (
         "concert",
         "birds nest",
@@ -648,37 +618,37 @@ def category_reservation_providers(category: str, provider_name: str = "") -> st
         "game",
     )
     if any(k in name for k in concert_keywords):
-        return "VibeCheck will book tickets via Ticketmaster or event site"
+        return "PlayBook will book tickets via Ticketmaster or event site"
 
-    # Golf-specific booking via VibeCheck.
+    # Golf-specific booking via PlayBook.
     if category == "golf":
-        return "VibeCheck will book tee times via GolfNow"
+        return "PlayBook will book tee times via GolfNow"
 
     # Ball games that are categorized as baseball.
     if category == "baseball":
-        return "VibeCheck will book tickets via MLB or Ticketmaster"
+        return "PlayBook will book tickets via MLB or Ticketmaster"
 
     # Topgolf / PopStroke / Puttshack and similar golf-entertainment venues.
     if any(k in name for k in ("topgolf", "popstroke", "puttshack")):
-        return "VibeCheck will handle reservations"
+        return "PlayBook will handle reservations"
 
     # Dining / brunch / nightlife (restaurants, bars, clubs).
     if category in {"dining", "brunch", "nightlife"}:
-        return "VibeCheck will book via OpenTable, Resy, or venue"
+        return "PlayBook will book via OpenTable, Resy, or venue"
 
     if category == "activity":
-        return "VibeCheck will handle booking"
+        return "PlayBook will handle booking"
     if category == "spa":
-        return "VibeCheck will book via resort or spa site"
+        return "PlayBook will book via resort or spa site"
     if category == "pool":
-        return "VibeCheck will book resort or daybed reservation"
+        return "PlayBook will book resort or daybed reservation"
     if category == "shopping":
-        return "VibeCheck will coordinate shopping stops"
+        return "PlayBook will coordinate shopping stops"
     if category == "transport":
         pretty_name = provider_name.strip() if provider_name else ""
         if pretty_name:
-            return f"VibeCheck will arrange {pretty_name}"
-        return "VibeCheck will arrange transportation"
+            return f"PlayBook will arrange {pretty_name}"
+        return "PlayBook will arrange transportation"
     return ""
 
 
@@ -803,7 +773,7 @@ def fmt_day(d: date) -> str:
 
 
 def generate_ical(itinerary: List[Dict[str, Any]]) -> str:
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//VibeCheck//EN"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//PlayBook//EN"]
     for s in itinerary:
         if s.get("venue") or s.get("type") == "Transportation":
             day = s.get("day", "")
@@ -828,7 +798,7 @@ def generate_ical(itinerary: List[Dict[str, Any]]) -> str:
     return "\r\n".join(lines)
 
 
-def generate_html(itinerary: List[Dict[str, Any]], title: str = "VibeCheck Plan", theme: str = "", day_descriptions: Optional[Dict[str, str]] = None) -> str:
+def generate_html(itinerary: List[Dict[str, Any]], title: str = "PlayBook Plan", theme: str = "", day_descriptions: Optional[Dict[str, str]] = None) -> str:
     by_day_iso: Dict[str, List[Dict]] = {}
     for s in itinerary:
         by_day_iso.setdefault(s.get("day", ""), []).append(s)
@@ -2396,7 +2366,7 @@ if current_page == "welcome":
     render_page_banner(_banner_for_page(theme, "welcome"), "Welcome")
     top_left, top_right = st.columns([0.68, 0.32], vertical_alignment="center")
     with top_left:
-        st.markdown('<div class="h1">VibeCheck</div>', unsafe_allow_html=True)
+        st.markdown('<div class="h1">PlayBook</div>', unsafe_allow_html=True)
         st.markdown(
             '<div class="subhead">Scottsdale group trips made effortless. Pick your trip, generate your itinerary, and lock it in.</div>',
             unsafe_allow_html=True,
@@ -3266,7 +3236,7 @@ elif current_page == "itinerary":
 
     top_row, edit_col = st.columns([0.84, 0.16], vertical_alignment="center")
     with top_row:
-        st.markdown('<div class="h1" style="margin:0;">VibeCheck</div>', unsafe_allow_html=True)
+        st.markdown('<div class="h1" style="margin:0;">PlayBook</div>', unsafe_allow_html=True)
         st.markdown('<div class="subhead" style="margin:0;">Confirm or swap slots. Export. Invite. Pay to lock it in.</div>', unsafe_allow_html=True)
 
     with edit_col:
@@ -3411,9 +3381,9 @@ elif current_page == "itinerary":
                 st.session_state.scroll_confirmed_to_top = True
                 st.rerun()
         else:
-            st.warning("Stripe payment link not configured. Add it in .streamlit/secrets.toml or set env var VIBECHECK_STRIPE_PAYMENT_LINK.")
+            st.warning("Stripe payment link not configured. Add it in Streamlit Secrets under [stripe] payment_link or set env var PLAYBOOK_STRIPE_PAYMENT_LINK.")
             st.code(
-                """# vibecheck/.streamlit/secrets.toml
+                """# playbook/.streamlit/secrets.toml
 [stripe]
 payment_link = "https://buy.stripe.com/test_..." """,
                 language="toml",
@@ -3548,9 +3518,9 @@ elif current_page == "confirmed":
     )
     dl1, dl2, dl3 = st.columns(3)
     with dl1:
-        st.download_button("Download iCal (.ics)", data=ical_data, mime="text/calendar", file_name="vibecheck_plan.ics", key="dl_ical_confirmed", use_container_width=True)
+        st.download_button("Download iCal (.ics)", data=ical_data, mime="text/calendar", file_name="playbook_plan.ics", key="dl_ical_confirmed", use_container_width=True)
     with dl2:
-        st.download_button("Download HTML (Print to PDF)", data=html_data, mime="text/html", file_name="vibecheck_plan.html", key="dl_html_confirmed", use_container_width=True)
+        st.download_button("Download HTML (Print to PDF)", data=html_data, mime="text/html", file_name="playbook_plan.html", key="dl_html_confirmed", use_container_width=True)
     with dl3:
-        st.download_button("Save as PDF (open HTML, then Print → Save as PDF)", data=html_data, mime="text/html", file_name="vibecheck_plan_print.html", key="dl_pdf_confirmed", use_container_width=True)
+        st.download_button("Save as PDF (open HTML, then Print → Save as PDF)", data=html_data, mime="text/html", file_name="playbook_plan_print.html", key="dl_pdf_confirmed", use_container_width=True)
     st.caption("Open the HTML file in a browser, then File → Print → Save as PDF.")

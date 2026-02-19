@@ -1,13 +1,13 @@
-# VibeCheck — Project Summary (Shareable)
+# PlayBook — Project Summary (Shareable)
 
 **Last updated:** February 2026  
 **Purpose:** Exportable summary of what’s been built so far for sharing with your group.
 
 ---
 
-## What VibeCheck Is
+## What PlayBook Is
 
-VibeCheck is a **group trip planning app** for Scottsdale-area trips (Spring Training, Bachelorette, WM Phoenix Open). One organizer sets up the trip; the group votes on preferences; the app reconciles preferences and generates two itinerary options (Plan A premium, Plan B balanced). The organizer selects a plan, confirms or swaps venues, pays to lock, and exports the final itinerary.
+PlayBook is a **group trip planning app** for Scottsdale-area trips (Spring Training, Bachelorette, WM Phoenix Open). One organizer sets up the trip; the group votes on preferences; the app reconciles preferences and generates two itinerary options (Plan A premium, Plan B balanced). The organizer selects a plan, confirms or swaps venues, pays to lock, and exports the final itinerary.
 
 ---
 

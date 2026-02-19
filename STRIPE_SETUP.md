@@ -4,7 +4,7 @@
 
 - In **Cursor**: `Cmd+P` (Mac) or `Ctrl+P` (Windows) → type **`secrets.toml`** → open **`.streamlit/secrets.toml`**.
 - Or in Terminal:  
-  `open /Users/markbarlow/Desktop/vibecheck/.streamlit/secrets.toml`
+  `open /Users/markbarlow/Desktop/playbook/.streamlit/secrets.toml`
 
 ## 2. Add the Stripe section
 
@@ -26,10 +26,10 @@ Save `secrets.toml` (e.g. `Cmd+S`).
 
 ## 4. Run the app from the project folder
 
-Stripe is read from **`vibecheck/.streamlit/secrets.toml`** (next to `app.py`). You must start Streamlit from the **vibecheck** folder:
+Stripe is read from **`playbook/.streamlit/secrets.toml`** (next to `app.py`). You must start Streamlit from the **playbook** folder:
 
 ```bash
-cd /Users/markbarlow/Desktop/vibecheck
+cd /Users/markbarlow/Desktop/playbook
 source venv/bin/activate
 streamlit run app.py
 ```
@@ -46,10 +46,10 @@ If you run from another folder (e.g. `Desktop`), the app may not find `secrets.t
 ## If the warning still appears
 
 - Confirm the file path is exactly:  
-  **`vibecheck/.streamlit/secrets.toml`**  
+  **`playbook/.streamlit/secrets.toml`**  
   (inside the same folder as `app.py`).
 - Confirm you’re running:  
   `streamlit run app.py`  
-  from **`/Users/markbarlow/Desktop/vibecheck`**.
+  from **`/Users/markbarlow/Desktop/playbook`**.
 - After any change to `secrets.toml`, **restart** Streamlit (Ctrl+C, then run the command again).
 - Check for typos: section must be **`[stripe]`**, key must be **`payment_link`**.
